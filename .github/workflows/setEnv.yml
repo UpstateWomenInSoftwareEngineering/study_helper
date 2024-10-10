@@ -1,4 +1,18 @@
-steps:
-  - name: Set OpenAI key
-    env: 
-      super_secret: ${{ secrets.OPENAI_API_KEY }}
+name: Set Env Vars
+
+on:
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
+
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+        name: Set OpenAI key
+        env: 
+          super_secret: ${{ secrets.OPENAI_API_KEY }}
