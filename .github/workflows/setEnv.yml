@@ -1,0 +1,4 @@
+steps:
+  - name: Set OpenAI key
+    env: 
+      super_secret: ${{ secrets.OPENAI_API_KEY }}
