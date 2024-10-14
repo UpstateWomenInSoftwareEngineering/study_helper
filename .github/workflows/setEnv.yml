@@ -4,14 +4,14 @@ on:
   push:
   pull_request:
   workflow_dispatch: 
-  
+
 jobs:
-  build: 
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-        name: Set OpenAI key
-        env: 
-          super_secret: ${{ secrets.OPENAI_API_KEY }}
+      - name: Set OpenAI key
+        run: echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> $GITHUB_ENV
