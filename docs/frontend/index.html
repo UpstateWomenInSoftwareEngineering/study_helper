@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyoncé Lyrics Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        .output-container {
+            text-align: center;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="output-container">
+        <p id="output-text">Click the button to generate Beyoncé lyrics🐝...</p>
+        <button id="generate-beyoncelyrics">Give me some Beyoncé lyrics 🎶</button>
+    </div>
+
+    <script>
+        async function generateBeyonceLyrics() {
+            document.getElementById('output-text').textContent = 'Generating Beyoncé lyrics...';
+
+            try {
+                const response = await fetch('http://localhost:4013/beyoncelyrics');
+                const data = await response.json();
+
+                document.getElementById('output-text').textContent = data.beyoncelyrics;
+            } catch (error) {
+                console.error('Error generating beyoncelyrics:', error);
+                document.getElementById('output-text').textContent = 'Failed to generate Beyoncé lyrics. Please try again.';
+            }
+        }
+
+        document.getElementById('generate-beyoncelyrics').addEventListener('click', generateBeyonceLyrics);
+    </script>
+  </body>
+</html>
