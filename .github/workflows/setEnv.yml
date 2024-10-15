@@ -4,19 +4,14 @@ on:
   push:
   pull_request:
   workflow_dispatch: 
-
+  
 jobs:
-  build:
+  build: 
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out the repo
-        uses: actions/checkout@v4
-        
-      - name: Build and push
-        uses: docker/build-push-action@v2
-        with:
-          push: true
-          tags: g2idocker/auth:latest
+      - uses: actions/checkout@v4
+        name: Set OpenAI key
+        env: 
           secrets: |
               "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}"
