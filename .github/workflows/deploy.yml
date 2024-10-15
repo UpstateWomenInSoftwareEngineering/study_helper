@@ -31,4 +31,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build  # This is the directory with the static files to deploy
+        publish_dir: ./docs/frontend  # This is the directory with the static files to deploy
