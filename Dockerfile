@@ -4,7 +4,8 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm install, --mount=type=secret,id=OPENAI_API_KEY \
+  export OPENAI_API_KEY=$(cat /run/secrets/OPENAI_API_KEY)
 
 COPY . .
 
