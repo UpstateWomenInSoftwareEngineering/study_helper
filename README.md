@@ -15,7 +15,7 @@ More to come on the use cases for this tool!
 This project is part of 🎃#Hacktoberfest2024, supported by UpWiSE.  All are welcome to work on issues and join in!
 
 ### How to Help This Project
-1. Before beginning any work, please review the Issues for this repository to see what work is available.  The following filter shows which issues do not have an Assignee, and can be assigned: [Unassigned Issue Filter for the Course Tracker](https://github.com/UpstateWomenInSoftwareEngineering/study_helper/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee)
+1. Before beginning any work, please review the Issues for this repository to see what work is available.  The following filter shows which issues do not have an Assignee, and can be assigned: [Unassigned Issue Filter for the Study Helper](https://github.com/UpstateWomenInSoftwareEngineering/study_helper/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee)
 2. When you find an issue you'd like to take on, leave a comment to request that you be assigned to the issue.
 3. Once a project admin assigns the issue to you, you can begin the issue work! ✨
 4. Clone the repository locally, then create a Branch to begin working on the issue.
