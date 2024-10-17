@@ -1,17 +1,16 @@
-version: '3'
 services:
   backend:
     build:
       context: .
       dockerfile: Dockerfile
-    environment:
-      - OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}
     ports:
       - "4013:4013"
-  
+    env_file:
+      - .env
+      
   frontend:
     build:
-      context: ./frontend
+      context: ./docs/frontend
       dockerfile: Dockerfile
     ports:
       - "8080:80"
