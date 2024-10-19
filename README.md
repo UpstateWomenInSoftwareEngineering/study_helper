@@ -52,7 +52,7 @@ OPENAI_API_KEY=your-secret-key
     
 
 > **⚠️ IMPORTANT:**
-> Make sure to add your ``.env`` file to your ``.gitignore`` ! Sharing your personal API keys is a security risk.API_KEY=your-secret-key
+> Make sure to add your ``.env`` file to your ``.gitignore`` ! Sharing your personal API keys is a security risk.
 
 
 ## Project Notes
