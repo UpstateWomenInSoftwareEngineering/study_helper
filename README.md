@@ -33,6 +33,28 @@ This project is part of 🎃#Hacktoberfest2024, supported by UpWiSE.  All are we
 ### Initial Setup Instructions
 *TBD, awaiting initial project check-in*
 
+### Setup your .env file
+In order to access your OpenAI API Key it is necessary to create a .env file. 
+
+1. If you don't already have an OpenAI API Key, sign up for an account on [OpenAI](https://platform.openai.com/signup/), then head on over to the [API Keys section](https://platform.openai.com/api-keys), create a new secret key, and copy it.
+2. In your terminal, run ``touch .env`` or, if you're using VSCode (for example), simply create a ``.env`` file in the project root directory. 
+3. Open the ``.env`` file and add your key to it:     
+  
+  
+
+```bash  
+OPENAI_API_KEY=your-secret-key
+```
+
+4. Save your ``.env`` file. 
+  
+  
+    
+
+> **⚠️ IMPORTANT:**
+> Make sure to add your ``.env`` file to your ``.gitignore`` ! Sharing your personal API keys is a security risk.
+
+
 ## Project Notes
 ### User Stories
 TBD
