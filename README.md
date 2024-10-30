@@ -57,7 +57,10 @@ OPENAI_API_KEY=your-secret-key
 
 ## Project Notes
 ### User Stories
-TBD
+![image](https://github.com/user-attachments/assets/1970163b-b35a-4fc1-9857-a2d4b3f4c6ad)
+![image](https://github.com/user-attachments/assets/762c5372-fa92-4e3e-a2f2-0d5b3168fed2)
+![image](https://github.com/user-attachments/assets/839e248e-f29f-4e2b-9a94-b5e7a30c1342)
+
 
 ### Wireframes
 TBD
